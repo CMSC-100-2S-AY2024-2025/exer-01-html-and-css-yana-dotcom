@@ -1,0 +1,22 @@
+.navigation-bar{
+    
+    background-color: #FFEDFA; 
+    height: 100px;
+}
+
+.short-intro-and-photo{
+
+    display: flex;
+    align-content: center; 
+    background-color: beige;
+
+
+}
+.header{
+
+    font-size: 20px;
+    font-weight: bold;
+    color: paleturquoise; 
+    
+
+}
