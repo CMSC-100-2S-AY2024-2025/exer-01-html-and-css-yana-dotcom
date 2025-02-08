@@ -34,6 +34,7 @@ body {
 
 .welcome-header img {
     height: 400px;
+    margin-left: 50px;
 }
 .welcome-header .welcome{
     padding-right: 90px;
@@ -203,4 +204,116 @@ body {
     font-size: 17px; 
     max-width: 90%; 
 }
+
+/* Styling for Skills Section*/
+.my-skills {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.frog {
+    width: 500px; 
+    height: auto;
+    margin-left: 100px;
+}
+
+.tech-and-soft-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.tech-skills {
+    background-color: #a8d67c;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    max-width: 80%;
+}
+
+.tech-skills h1 {
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}
+
+.tech-skills h2{
+    font-size: 20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.soft-skills {
+    background-color: #f18f8f;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    max-width: 80%;
+}
+
+.soft-skills h1 {
+    font-size: 35px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.soft-skills h2 {
+    font-size: 20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+/* Styling for Footer*/
+.footer {
+    background-color: #6961b1;
+    color: white;
+    padding: 15px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left p {
+    margin: 3px 0;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+
 
