@@ -11,6 +11,28 @@ body {
     padding: 0 20px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;  
+    gap: 10px; 
+}
+
+.logo-text {
+    font-size: 30px; 
+    font-family: "Homemade Apple", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f18f8f;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
 .navbar-items {
     display: flex; 
     margin-left: auto;
@@ -21,6 +43,17 @@ body {
     font-style: normal;
     color: #6961b1;
     gap: 50px; 
+}
+
+.navbar-items a {
+    text-decoration: none;
+    color: #6961b1;
+}
+
+.navbar-items a:hover {
+    color: #f18f8f; 
+    transform: scale(1.05); /* added transition for better UI. reference used: https://www.w3schools.com/css/css3_transitions.asp */
+    transition: 0.2s ease-in-out;
 }
 
 /*Styling Header Section */
@@ -34,7 +67,7 @@ body {
 
 .welcome-header img {
     height: 400px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 .welcome-header .welcome{
     padding-right: 90px;
@@ -56,8 +89,8 @@ body {
     margin: auto;
     margin-bottom: 50px;
     position: relative;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* added shadow design. reference used: https://www.w3schools.com/css/css3_shadows_box.asp */
+    transition: transform 0.3s ease-in-out; /* added transition for better UI. reference used: https://www.w3schools.com/css/css3_transitions.asp */
 }
 
 .photo-and-about-me:hover {
@@ -168,14 +201,14 @@ body {
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* added shadow design. reference used: https://www.w3schools.com/css/css3_shadows_box.asp */
     transition: transform 0.3s ease-in-out;
     text-align: center;
     gap: 5px; 
 }
 
 .project-box:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* added transition for better UI. reference used: https://www.w3schools.com/css/css3_transitions.asp */
 }
 
 .project-box h1 {
@@ -212,9 +245,8 @@ body {
     align-items: center;
     gap: 30px;
     padding: 30px;
-    border-radius: 15px;
     margin: auto;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* added shadow design. reference used: https://www.w3schools.com/css/css3_shadows_box.asp */
 }
 
 .frog {
@@ -234,10 +266,15 @@ body {
     background-color: #a8d67c;
     padding: 15px;
     border-radius: 30px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     font-family: "Poppins", sans-serif;
     max-width: 80%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* added shadow design. reference used: https://www.w3schools.com/css/css3_shadows_box.asp */
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-skills:hover {
+    transform: scale(1.05); /* added transition for better UI. reference used: https://www.w3schools.com/css/css3_transitions.asp */
 }
 
 .tech-skills h1 {
@@ -259,10 +296,15 @@ body {
     background-color: #f18f8f;
     padding: 15px;
     border-radius: 30px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* added shadow design. reference used: https://www.w3schools.com/css/css3_shadows_box.asp */
     text-align: center;
     font-family: "Poppins", sans-serif;
     max-width: 80%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.soft-skills:hover {
+    transform: scale(1.05); /* added transition for better UI. reference used: https://www.w3schools.com/css/css3_transitions.asp */
 }
 
 .soft-skills h1 {
@@ -285,36 +327,65 @@ body {
 .footer {
     background-color: #6961b1;
     color: white;
-    padding: 15px 20px;
+    padding: 20px;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    max-width: 1200px;
+    align-items: center;
+    width: 100%;
 }
 
 .footer-left {
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
+
 .footer-right {
     display: flex;
     flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
 }
 
 .footer-left p {
     margin: 3px 0;
 }
 
-.footer-right {
-    text-align: right;
+.footer-right p {
+    margin: 3px 0;
 }
 
+.footer-content img {
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+.back-to-top {
+    background-color: #f18f8f;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 10px; 
+    display: inline-block; 
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out; /* added transition for better UI. reference used: https://www.w3schools.com/css/css3_transitions.asp */
+}
+
+.back-to-top:hover {
+    background-color: #e06e6e;
+    transform: scale(1.1);
+}
 
